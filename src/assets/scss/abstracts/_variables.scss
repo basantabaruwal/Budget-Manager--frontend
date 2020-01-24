@@ -49,6 +49,7 @@ $color-dark: #343a40;
 $color-light: #f4f4f4;
 $color-danger: #dc3545;
 $color-success: #28a745;
+$color-info: #5643fa;
 $color-text-dark: #333;
 $color-text-light: $color-white;
 $color-text-grey: #777;
@@ -89,6 +90,10 @@ $default-box-shadow: 0 1.6rem 4rem rgba($color-dark, 0.5);
   --color-primary-dark: #ba265d;
   --color-primary-dark: #ba265d;
 
+--color-secondary-light: #76b2f7;
+--color-secondary-light-2: #17a2b8;
+--color-secondary-dark:  #5643fa;
+
   // grey
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
@@ -100,8 +105,10 @@ $default-box-shadow: 0 1.6rem 4rem rgba($color-dark, 0.5);
   --color-grey-dark-3: #999;
 
   // shadows
-  --shadow-dark: 0 2rem 6rem 0 rgba(#000, .3);
-  --default-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, .06);
+  --default-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.06);
+  --shadow-light: 0 .3rem .3rem rgba(0, 0, 0, .10);
+  --shadow-medium: 0 1.5rem 1.5rem rgba(0, 0, 0, .15);
+  --shadow-dark: 0 2rem 6rem 0 rgba(0, 0, 0, 0.3);
   --line: 1px solid var(--color-grey-light-2);
+  --line-dark: 1px solid var(--color-grey-light-4);
 }
-

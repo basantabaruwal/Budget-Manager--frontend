@@ -8,17 +8,121 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <div class="app-wrapper">
-      <header class="header">
-        Header
-      </header>
+    <div class="container">
+      <div class="app-wrapper">
+        <header class="header">
+          <h2 class="heading-secondary">Current Budget Status</h2>
+          <h1 class="heading-primary">
+            <span class="text-positive">+&nbsp;</span>
+            $3,000.00
+          </h1>
 
-      <main class="main">
-        Main 
-      </main>
-      <footer class="footer">
-        Footer
-      </footer>
+          <div class="indicators">
+            <div
+              class="indicator-slider indicator-slider--positive indicator-slider--success"
+            >
+              <div class="indicator-slider__ink">&nbsp;</div>
+            </div>
+          </div>
+
+          <div class="statistics">
+            <div class="statistics__box statistics__box--positive">
+              <div class="statistics__title">Income</div>
+              <div class="statistics__stat">$5000.00</div>
+            </div>
+            <div class="statistics__box statistics__box--negative">
+              <div class="statistics__title">Expense</div>
+              <div class="statistics__stat">$2000.00</div>
+            </div>
+            <div class="statistics__box statistics__box--neutral">
+              <h3 class="statistics__title">Total Transactions</h3>
+              <h4 class="statistics__stat">10</h4>
+            </div>
+          </div>
+        </header>
+
+        <main class="main">
+          <section class="transaction">
+            <form method="POST" class="transaction__form">
+              <select name="type" id="type" class="type">
+                <option value="plus">+</option>
+                <option value="minus">-</option>
+              </select>
+              <input
+                type="text"
+                class="title"
+                placeholder="Transaction Title"
+                required
+              />
+              <input
+                type="number"
+                class="amount"
+                placeholder="Transaction Amount"
+                required
+              />
+              <button class="btn-submit">
+                <img src="./assets/img/tick.svg" alt="submit button icon" />
+              </button>
+            </form>
+
+            <div class="transaction__list">
+              <ul class="transaction__list-income">
+                <h3 class="transaction__list-heading">Income</h3>
+                <li class="transaction__item transaction__item-income">
+                  <p class="transaction__title">Salary</p>
+                  <p class="transaction__amount">$3000</p>
+                  <button class="btn-delete">X</button>
+                </li>
+                <li class="transaction__item transaction__item-income">
+                  <p class="transaction__title">App development</p>
+                  <p class="transaction__amount">$300</p>
+                  <button class="btn-delete">X</button>
+                </li>
+                <li class="transaction__item transaction__item-income">
+                  <p class="transaction__title">Training</p>
+                  <p class="transaction__amount">$100</p>
+                  <button class="btn-delete">X</button>
+                </li>
+                <li class="transaction__item transaction__item-income">
+                  <p class="transaction__title">Marketting</p>
+                  <p class="transaction__amount">$500</p>
+                  <button class="btn-delete">X</button>
+                </li>
+              </ul>
+              <ul class="transaction__list-expense">
+                <h3 class="transaction__list-heading">Expense</h3>
+                <li class="transaction__item transaction__item-expense">
+                  <p class="transaction__title">Fooding</p>
+                  <p class="transaction__amount">$500</p>
+                  <button class="btn-delete">X</button>
+                </li>
+                <li class="transaction__item transaction__item-expense">
+                  <p class="transaction__title">Rent</p>
+                  <p class="transaction__amount">$300</p>
+                  <button class="btn-delete">X</button>
+                </li>
+                <li class="transaction__item transaction__item-expense">
+                  <p class="transaction__title">Entertainment</p>
+                  <p class="transaction__amount">$100</p>
+                  <button class="btn-delete">X</button>
+                </li>
+                <li class="transaction__item transaction__item-expense">
+                  <p class="transaction__title">Miscellenous</p>
+                  <p class="transaction__amount">$500</p>
+                  <button class="btn-delete">X</button>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="copyright">
+            <p class="copyright__text">
+              &copy; All rights reserved @ Basanta Baruwal
+            </p>
+          </div>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

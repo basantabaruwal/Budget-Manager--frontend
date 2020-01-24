@@ -19,13 +19,13 @@
 @keyframes slideInFromRight {
     0% {
         opacity: 0;
-        transform: translateX(-10rem);
+        transform: translateX(10rem);
 
     }
 
     88% {
         opacity: 1;
-        transform: translateX(-1rem);
+        transform: translateX(1rem);
     }
 
     100% {

@@ -1,0 +1,32 @@
+body {
+  background: linear-gradient(
+    to right bottom,
+    rgba($color-blue-light-2, 0.8),
+    rgba($color-blue, 0.8)
+  );
+}
+
+.container {
+  background: linear-gradient(
+    to right bottom,
+    rgba($color-blue-light-2, 0.8),
+    rgba($color-blue, 0.8)
+  );
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem;
+  box-shadow: var(--shadow-dark);
+}
+
+
+.transaction {
+    background: var(--color-grey-light-1);
+    color: var(--color-grey-dark-2);
+}
+
+
+/////////////////FOOTER
+.footer {
+    padding: 3rem;
+    background: var(--color-grey-dark-2);
+}

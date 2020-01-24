@@ -1,0 +1,102 @@
+////////////////////STATUS INDICATOR SLIDER
+///////////////////////////////////////////
+.status-indicator {
+  &--positive {
+    color: lighten(green, 30);
+  }
+  &--negative {
+    color: lighten(red, 10);
+  }
+}
+
+// status indicactor slider
+.indicator-slider {
+  width: 100%;
+  height: 2rem;
+  padding: 0.5rem;
+  background: $color-grey-light-2;
+  border-radius: 500px;
+  position: relative;
+  // padding: .2rem;
+  box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.15) inset;
+  padding: 0 0.2rem;
+  margin: 0.5rem 0;
+
+    // &:hover {
+    //   &::before {
+    //     background-color: red;
+    //   }
+    // }
+
+  &--positive::before,
+  &--negative::before {
+    content: "";
+    display: inline-block;
+    max-width: calc(100% - 0.8rem);
+    width: calc(30% - 0.8rem);
+    height: 70%;
+    position: absolute;
+    border-radius: 500px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(238, 130, 238, 0.15) inset;
+    background: skyblue;
+    // background: linear-gradient(
+    //   to right,
+    //   rgba(238, 130, 238, 1) 0%,
+    //   rgba(238, 130, 238, 1) 50%,
+    //   rgba(255, 255, 255, 1) 50%
+    // );
+    background-size: 100%;
+    transition: all 0.3s linear;
+    animation: indicator_animation 2s ease-in-out 0s 1 alternate-reverse;
+  }
+
+  // position modifiers
+  &--positive {
+    &::before {
+      left: 0.4rem;
+      background: red;
+    }
+  }
+
+  &--negative {
+    &::before {
+      right: 0.4rem;
+    }
+  }
+
+  // color modifiers
+  &--success {
+    &::before {
+      background: lighten(green, 10);
+    }
+  }
+  &--info {
+    &::before {
+      background: lighten(blue, 10);
+    }
+  }
+  &--warning {
+    &::before {
+      background: orange;
+    }
+  }
+  &--danger {
+    &::before {
+      background: red;
+    }
+  }
+}
+
+@keyframes indicator_animation {
+  0% {
+    width: calc(30% - 0.8rem);
+  }
+  // 50% {
+  //   width: calc(100% - 0.8rem);
+  // }
+  100% {
+    width: calc(100% - 0.8rem);
+  }
+}
