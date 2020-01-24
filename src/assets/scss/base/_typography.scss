@@ -21,5 +21,8 @@ a {
 }
 
 .text-positive {
-  color: green;
+  color: $color-success;
+}
+.text-negative {
+  color: $color-danger;
 }
