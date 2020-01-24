@@ -1,0 +1,75 @@
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background-color: rgba($color-white, .5);
+  border-radius: 3px;
+  padding: 4rem;
+  padding-left: 6rem;
+  font-size: $default-font-size;
+  @include clearfix;
+  transform: skewX(-12deg);
+
+  & > * {
+    transform: skewX(12deg);
+  }
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    background-color: darken($color-grey-light-1, 6);
+    float: left;
+    // this requires element to be floated and have definite width and height
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    transform: translateX(-3rem) skewX(12deg);
+    // margin-right: 3rem;
+    position: relative;
+
+    img {
+      height: 100%;
+      @include transition-ease;
+      transform: translateX(-3rem) scale(1.4);
+      backface-visibility: hidden;
+    }
+
+    figcaption {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0%;
+      left: 0;
+      // background: rgba($color-tertiary-light, 0.2);
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      color: $color-white;
+      opacity: 0;
+      @include transition-ease(0.2s);
+        backface-visibility: hidden;
+
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        backface-visibility: hidden;
+        opacity: 1;
+        @include transition-ease(0.2s);
+      }
+    }
+  }
+  &:hover {
+    img {
+      filter: blur(3px) brightness(90%);
+      transform: scale(1) translateX(-3rem);
+    }
+    figcaption {
+      opacity: 1;
+      // animation: slideInFromBottom 0.5s ease-in-out 0s 1;
+      transform: translateY(-20%);
+    }
+  }
+}

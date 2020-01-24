@@ -1,0 +1,41 @@
+.composition {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+    &__photo {
+        // always use % when working with images
+      width: 55%;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+      border-radius: 2px;
+      position: absolute;
+      transition: all 0.5s ease-in-out;
+      // border: 5px solid $color-white;
+      background-color: $color-white;
+      padding: 1rem;
+  
+      &:hover {
+        // border: 5px solid $color-primary-light;
+        z-index: 1;
+        transform: scale(1.1) translateY(-5px);
+      }
+  
+      &--p1 {
+        top: -5rem;
+        left: -2%;
+      }
+      &--p2 {
+        top: 6rem;
+        left: 20%;
+      }
+      &--p3 {
+        top: -3rem;
+        left: 40%;
+      }
+    }
+  // VERY VERY IMPORTANT
+  // when the whole composition container is hovered select the composition box that is not hovered
+    &:hover &__photo:not(:hover){
+        transform: scale(.95);
+    }
+  }

@@ -1,0 +1,107 @@
+// white
+$color-white: #fff;
+// blue
+$color-blue: #00a4bd;
+$color-blue-light: #17a2b8;
+$color-blue-light-2: #2998ff;
+$color-blue-dark: #5643fa;
+
+// black
+$color-black: #000;
+// green
+$color-green: #28a745;
+$color-green-light: #7ed56f;
+$color-green-middle: #55c57a;
+$color-green-dark: #28b485;
+
+// orange
+$color-orange-light: #ffb900;
+$color-orange-dark: #ff7730;
+
+// violet
+
+// grey
+$color-grey-light-1: #faf9f9;
+$color-grey-light-2: #f4f2f2;
+$color-grey-light-3: #f0eeee;
+$color-grey-light-4: #ccc;
+$color-grey-dark-1: #333;
+$color-grey-dark-2: #777;
+$color-grey-dark-3: #999;
+
+// pink
+$color-pink: #eb2f64;
+$color-pink-light: #ff3366;
+$color-pink-dark: #ba265d;
+
+// Project colors
+$color-primary: $color-pink;
+$color-primary-light: $color-pink-light;
+$color-primary-dark: $color-pink-dark;
+
+$color-secondary-light: $color-orange-light;
+$color-secondary-dark: $color-orange-dark;
+
+$color-tertiary-light: $color-blue-light-2;
+$color-tertiary-dark: $color-blue-dark;
+
+$color-dark: #343a40;
+$color-light: #f4f4f4;
+$color-danger: #dc3545;
+$color-success: #28a745;
+$color-text-dark: #333;
+$color-text-light: $color-white;
+$color-text-grey: #777;
+$color-text-grey-light: #ddd;
+
+// screen width
+$max-width: 114rem; // = 114x10=1140px
+
+// grid variables
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+//default variables
+// font-sizes
+$default-font-size: 1.6rem;
+$default-border-radius: 4px;
+$default-box-shadow: 0 1.6rem 4rem rgba($color-dark, 0.5);
+
+// screen width
+$max-width: 114rem; // = 114x10=1140px
+
+// grid variables
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+//default variables
+// font-sizes
+$default-font-size: 1.6rem;
+$default-border-radius: 4px;
+$default-box-shadow: 0 1.6rem 4rem rgba($color-dark, 0.5);
+
+// CSS Variables
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-light: #ff3366;
+  --color-primary-dark: #ba265d;
+  --color-primary-dark: #ba265d;
+
+  // grey
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+
+  // shadows
+  --shadow-dark: 0 2rem 6rem 0 rgba(#000, .3);
+  --default-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, .06);
+  --line: 1px solid var(--color-grey-light-2);
+}
+
